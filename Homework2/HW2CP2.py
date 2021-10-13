@@ -13,6 +13,9 @@ month_list = ['January', 'February', 'March',
               'August', 'September', 'October',
 
               'November', 'December']
+# this part just reads the text file and I just had it print out what it's reading
+f = open('inputDates.txt', 'r')
+print(f.read())
 
 # begin loop
 while True:
@@ -71,4 +74,5 @@ while True:
                     # printing date in new format
 
                     print(newDateFormat)
-
+# closes the text file
+f.close
